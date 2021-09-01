@@ -18,16 +18,15 @@
 #		%eax holds the system call number
 #		%ebx holds the return status
 
-.section .data
+.text
 
-.section .text
 .globl _start
 _start:
 movl $1, %eax	# This is the linux kernel command
 		# number (system call) for existing
 		# a program
 
-movl $16, %ebx	# This is the status number we will
+movl $22, %ebx	# This is the status number we will
 		# return to the operating system.
 		# Change this around and it will
 		# return different things to
