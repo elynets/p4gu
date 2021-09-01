@@ -27,7 +27,7 @@ movl $1, %eax	# This is the linux kernel command
 		# number (system call) for existing
 		# a program
 
-movl $22, %ebx	# This is the status number we will
+movl $36, %ebx	# This is the status number we will
 		# return to the operating system.
 		# Change this around and it will
 		# return different things to
